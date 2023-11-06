@@ -3,8 +3,8 @@ import { defineConfig } from 'vite'
 import { ManifestOptions, VitePWA } from 'vite-plugin-pwa'
 
 const manifest: Partial<ManifestOptions> = {
-  id: 'pwa-with-basic-swr-cache-demo',
-  name: 'PWA with basic SWR cache demo',
+  id: 'pwa-with-swr-idb-cache-demo',
+  name: 'PWA with SWR IndexedDB cache demo',
   short_name: 'PWA SWR demo',
   start_url: '/',
   display: 'standalone',
