@@ -34,7 +34,7 @@ export function Video({ videoName, videoUrl }: Readonly<Props>) {
   return (
     <div className="video-container">
       <div className="button-container">
-        <h1>{videoName}</h1>
+        <h2>{videoName}</h2>
         {isDownloading ? (
           <p>Downloading ....</p>
         ) : cachedVideoUrl ? (
@@ -45,7 +45,9 @@ export function Video({ videoName, videoUrl }: Readonly<Props>) {
           <p>Connect to view or download</p>
         )}
       </div>
-      <video controls src={cachedVideoUrl ?? videoUrl} />
+      <video autoPlay={false} playsInline={true} controls={true}>
+        <source src={cachedVideoUrl ?? videoUrl} type="video/mp4" />
+      </video>
     </div>
   )
 }

@@ -32,6 +32,10 @@ h3 {
   margin: 0;
 }
 
+p {
+  font-size: 0.8em;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -52,19 +56,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 /* responsiveness */
 @media (max-width: 600px) {
   h1 {
@@ -80,5 +71,10 @@ button:focus-visible {
   h3 {
     font-size: 0.8em;
     line-height: 0.5;
+  }
+
+  button {
+    padding: 0.4em 0.8em;
+    width: 8em;
   }
 }

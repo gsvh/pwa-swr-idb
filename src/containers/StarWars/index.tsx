@@ -30,13 +30,16 @@ function StarWars() {
   }
   return (
     <div className="vertical-stack">
-      <h2>Starwars</h2>
+      <h1>Star Wars Films</h1>
       {isLoading ? (
         <p>Loading ...</p>
-      ) : // @ts-ignore
-      data ? (
+      ) : data ? (
         data?.results?.map((film: any) => (
-          <div key={film.episode_id}>
+          <div
+            // style={{ paddingTop: '20px' }}
+            className="vertical-stack"
+            key={film.episode_id}
+          >
             <h3>{film.title}</h3>
             <p>{film.opening_crawl}</p>
           </div>

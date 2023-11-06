@@ -4,7 +4,7 @@ import './index.css'
 const videos = [
   {
     name: 'He-Man',
-    url: 'https://player.odycdn.com/v6/streams/59b4017390a032f34fb948f51c0a1b325f016223/9b905a.mp4',
+    url: 'https://player.odycdn.com/v6/streams/632b113daa75d9f8a93049286ed56daec45c64fb/508c8c.mp4',
   },
   {
     name: 'Transformers',
@@ -30,7 +30,7 @@ function Videos() {
 
   return (
     <div className="vertical-stack">
-      <h2>Videos</h2>
+      <h1>Videos</h1>
       {videos.map((video) => (
         <Video key={video.name} videoName={video.name} videoUrl={video.url} />
       ))}
