@@ -44,7 +44,7 @@ export async function downloadFile(url: string) {
 
   await db.put('videos', response.data, url)
 
-  return URL.createObjectURL(new Blob([response.data]))
+  return URL.createObjectURL(new Blob([response.data], { type: 'video/mp4' }))
 }
 
 export async function getFileUrl(key: string) {
@@ -59,7 +59,9 @@ export async function getFileUrl(key: string) {
     return null
   }
 
-  const fileUrl = URL.createObjectURL(new Blob([fileData]))
+  const fileUrl = URL.createObjectURL(
+    new Blob([fileData], { type: 'video/mp4' })
+  )
   return fileUrl
 }
 

@@ -28,6 +28,7 @@ function StarWars() {
   if (error) {
     console.warn(error)
   }
+
   return (
     <div className="vertical-stack">
       <h1>Star Wars Films</h1>
