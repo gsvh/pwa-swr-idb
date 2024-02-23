@@ -4,7 +4,7 @@ import './index.css'
 const shortVideos = [
   {
     name: 'He-Man',
-    url: 'https://player.odycdn.com/v6/streams/632b113daa75d9f8a93049286ed56daec45c64fb/508c8c.mp4',
+    url: 'https://s3.eu-west-1.amazonaws.com/dev.wolkskool-assets/HEYYEYAAEYAAAEYAEYAA.mp4',
   },
   {
     name: 'Transformers',
@@ -15,7 +15,7 @@ const shortVideos = [
 const mediumVideos = [
   {
     name: 'Looney Tunes',
-    url: 'https://player.odycdn.com/v6/streams/ff43bdc4a96a4dbe30c60f63fa522458f8e51522/33f4d4.mp4',
+    url: 'https://player.odycdn.com/v6/streams/6b67b67212b8f4c54fbd8ca950755078a1e0ffd8/c2f062.mp4',
   },
 ]
 

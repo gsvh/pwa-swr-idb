@@ -13,7 +13,6 @@ export function Video({ videoName, videoUrl }: Readonly<Props>) {
   const [isDownloading, setIsDownloading] = useState<boolean>(false)
 
   const url = useMemo(() => {
-    console.log({ cachedVideoUrl, videoUrl })
     return cachedVideoUrl ?? videoUrl
   }, [cachedVideoUrl, videoUrl])
 
